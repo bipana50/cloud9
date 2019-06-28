@@ -1,0 +1,17 @@
+<% include partials/header.ejs %>
+<div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="<%= food.image %>">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= food.name %></h4>
+    <label>Calories:</label>
+    <p><%= food.calories %> </p>
+    <label>Recipe:</label>
+    <p><%- food.recipe %></p>
+  </div>
+</div>
+
+<% include partials/footer.ejs %>
